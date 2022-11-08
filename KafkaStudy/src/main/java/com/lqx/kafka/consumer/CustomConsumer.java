@@ -51,8 +51,8 @@ public class CustomConsumer {
             // 打印消费到的数据
             for (ConsumerRecord<String, String> consumerRecord : consumerRecords) {
                 System.out.println(consumerRecord.value());
-                String value = consumerRecord.value()+"\r\n";
-                FileUtils.writeStringToFile(new File("C:\\workspace\\ideaProject1\\LiqxStudy\\data\\kafka.txt"), value, true);
+//                String value = consumerRecord.value()+"\r\n";
+//                FileUtils.writeStringToFile(new File("C:\\workspace\\ideaProject1\\LiqxStudy\\data\\kafka.txt"), value, true);
             }
         }
     }
